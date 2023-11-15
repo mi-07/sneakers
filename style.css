@@ -73,7 +73,7 @@ header {
     width: 100%;
     border-bottom: 1px solid #676B73;
     background: white;
-    padding: 24px 0;
+    padding: 24px 0 20px;
 }
 
 .header__container {
@@ -89,12 +89,14 @@ header {
 .nav {
     display: flex;
     color: #121723;
+    padding-bottom: 10px;
 }
 
 .nav__list {
     display: flex;
     align-items: center;
-    column-gap: 24px;
+    /* column-gap: 24px; */
+    column-gap: 17px;
 }
 
 .nav__link {
@@ -104,9 +106,9 @@ header {
     align-items: center;
 }
 
-main {
+.main {
     width: 100%;
-    padding: 32px 0;
+    padding: 32px 0 30px;
     margin: 0;
 }
 
@@ -139,6 +141,7 @@ main {
 }
 
 .sneaker--unic {
+    border-radius: 50px;
     padding: 48px;
 }
 
@@ -180,7 +183,7 @@ main {
 .sneaker--unic .sneaker__title {
     font-size: 48px;
     font-weight: normal;
-    margin-bottom: 24px;
+    margin-bottom: 11px;
 }
 
 .sneaker__subtitle {
@@ -194,7 +197,7 @@ main {
 .sneaker__desc {
     width: 100%;
     display: flex;
-    padding-top: 24px;
+    padding-top: 13px;
     column-gap: 32px;
 }
 
@@ -208,6 +211,7 @@ main {
 
 .sneaker__column--left {
     row-gap: 28px;
+    line-height: 1.4;
 }
 
 .sneaker__column--right h2 {
@@ -241,7 +245,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 0;
+    padding: 27px 0;
 }
 
 .footer__logo {
