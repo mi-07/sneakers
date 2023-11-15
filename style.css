@@ -66,7 +66,10 @@ body {
 
 .title {
     font-size: 48px;
+    font-weight: bold;
     margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -95,7 +98,6 @@ header {
 .nav__list {
     display: flex;
     align-items: center;
-    /* column-gap: 24px; */
     column-gap: 17px;
 }
 
@@ -282,4 +284,68 @@ footer {
 .animate:hover {
     transform: translateY(-20px);
     transition: .4s;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    .container {
+        width: 91.42%;
+        max-width: 700px;
+    }
+
+    .sneakers__card-link {
+        width: calc((100% - 24px) / 2);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .sneakers__card-link {
+        width: 100%;
+    }
+
+    .container {
+        max-width: 500px;
+    }
+
+    .footer__content {
+        flex-direction: column;
+        padding: 32px 0 23px;
+        row-gap: 22px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .title {
+        font-size: 40px;
+    }
+
+    .header__container {
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    .nav {
+        padding-bottom: 0px;
+    }
+
+    .sneaker__image {
+        aspect-ratio: 1/0.718;
+    }
+
+    .sneaker__info {
+        padding-top: 42px;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+
+    .title {
+        font-size: 32px;
+    }
 }
