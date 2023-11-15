@@ -125,6 +125,7 @@ main {
 .sneakers__card-link {
     width: calc((100% - 48px) / 3);
     display: flex;
+    position: relative;
 }
 
 .sneaker {
@@ -267,4 +268,14 @@ footer {
     color: #A1A6B4;
     font-size: 16px;
     font-weight: 700;
+}
+
+.animate {
+    position: relative;
+    transition: .3s;
+}
+
+.animate:hover {
+    transform: translateY(-20px);
+    transition: .4s;
 }
